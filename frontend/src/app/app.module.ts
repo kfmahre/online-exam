@@ -20,6 +20,7 @@ const appRoutes: Routes = [
     AppComponent,
     ExamFormComponent,
     ExamsComponent,
+    CallbackComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +35,9 @@ const appRoutes: Routes = [
 export class AppModule {
   constructor() {
     Auth0.configure({
-      domain: 'bk-samples.auth0.com',
+      domain: 'kfmahre.auth0.com',
       audience: 'https://online-exam.digituz.com.us',
-      clientID: 'oxiIp4EX1diCft0rOjzTc9PnHRvtuh9a',
+      clientID: 'neu8zcSbFtpbC66v04RmGsapbntmKt7q',
       redirectUri: 'http://localhost:4200/callback',
       scope: 'openid profile manage:exams'
     });
